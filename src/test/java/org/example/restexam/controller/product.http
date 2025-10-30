@@ -1,0 +1,44 @@
+### 제품 생성
+POST http://localhost:8080/api/products
+Content-type: application/json
+
+{
+  "name" : "clock",
+  "price" : 15000
+}
+
+### 제품 생성2
+POST http://localhost:8080/api/products
+Content-type: application/json
+
+{
+  "name" : "card",
+  "price" : 20000
+}
+
+### 제품 생성3
+POST http://localhost:8080/api/products
+Content-type: application/json
+
+{
+  "name" : "PC",
+  "price" : 1500000
+}
+
+### GET
+GET http://localhost:8080/api/products
+Accept: application/json
+
+### id에 해당하는 제품 조회
+GET http://localhost:8080/api/products/2
+
+### 제품 정보 수정
+PUT http://localhost:8080/api/products/15
+Content-Type: application/json
+
+{
+  "price": 3000
+}
+
+### 제품 삭제
+DELETE http://localhost:8080/api/products/3
