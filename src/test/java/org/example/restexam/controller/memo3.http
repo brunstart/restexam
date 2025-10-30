@@ -1,0 +1,37 @@
+### 메모생성
+POST http://localhost:8080/api3/memos
+Content-type: application/json
+
+{
+  "content" : "memo2 test 1"
+}
+
+### id 에 해당하는 메모 조회
+GET http://localhost:8080/api3/memos/6
+Accept: application/json
+
+### 메모 전체 조회
+GET http://localhost:8080/api3/memos
+Accept: application/json
+
+### 메모 수정
+PUT http://localhost:8080/api3/memos/10
+Content-type: application/json
+
+{
+  "content": "수정된 첫번째 메모"
+}
+
+### DELETE
+DELETE http://localhost:8080/api3/memos/5
+Accept: application/json
+
+### id 에 해당하는 메모 조회
+GET http://localhost:8080/api3/memos/1
+Accept: application/xml     // url이 기본이어도 헤더에 따라 다르게 출력이 가능
+
+### id 에 해당하는 메모 조회 (json으로 구현, 헤더 필요 없음)
+GET http://localhost:8080/api3/memos/json/1
+
+### id 에 해당하는 메모 조회 (xml으로 구현, 헤더 필요 없음)
+GET http://localhost:8080/api3/memos/xml/1
