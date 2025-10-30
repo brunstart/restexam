@@ -1,8 +1,4 @@
-### GET
-GET http://localhost:8080/api/users
-Accept: application/json
-
-### POST
+### 사용자 생성
 POST http://localhost:8080/api/users
 Content-type: application/json
 
@@ -10,3 +6,39 @@ Content-type: application/json
   "name" : "kang",
   "email" : "kang@gmail.com"
 }
+
+### 사용자 생성2
+POST http://localhost:8080/api/users
+Content-type: application/json
+
+{
+  "name" : "kim",
+  "email" : "kim@gmail.com"
+}
+
+### 사용자 생성3
+POST http://localhost:8080/api/users
+Content-type: application/json
+
+{
+  "name" : "park",
+  "email" : "park@gmail.com"
+}
+
+### GET
+GET http://localhost:8080/api/users
+Accept: application/json
+
+### id에 해당하는 사용자 조회
+GET http://localhost:8080/api/users/1
+
+### 사용자 정보 수정
+PUT http://localhost:8080/api/users/1
+Content-Type: application/json
+
+{
+  "email": "test@examm.com"
+}
+
+### 사용자 삭제
+DELETE http://localhost:8080/api/users/3
